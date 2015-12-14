@@ -143,9 +143,12 @@
 <li>转为pdf格式。命令为<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc --latex-engine=xelatex yourfile<span class="class">.txt</span> -o newfile.pdf</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>注意，为了正确转换中文文本，请修改模板文件，在模板文件第一行下方加入<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;ctex&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>即可，当然你首先得确认你的系统上可以正确编译和生成中文tex文件。另外，模板文件在哪里呢？这个需要说明一下，你可以使用如下命令查看：<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -<span class="keyword">D</span> latex</span><br></pre></td></tr></table></figure></p>
-<p>如果是其他模版，比如html等，将latex变成html即可。如果要修改的话，以我使用的mint操作系统为例，应该使用的命令是：<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\sudo vim <span class="regexp">/usr/</span>share<span class="regexp">/pandoc*/</span>templates/<span class="keyword">default</span>.latex</span><br></pre></td></tr></table></figure></p>
+<p>注意，为了正确转换中文文本，请修改模板文件，在模板文件第一行下方加入</p>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;ctex&#125;</span></span><br></pre></td></tr></table></figure>
+<p>即可，当然你首先得确认你的系统上可以正确编译和生成中文tex文件。另外，模板文件在哪里呢？这个需要说明一下，你可以使用如下命令查看：</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -<span class="keyword">D</span> latex</span><br></pre></td></tr></table></figure>
+<p>如果是其他模版，比如html等，将latex变成html即可。如果要修改的话，以我使用的mint操作系统为例，应该使用的命令是：</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\sudo vim <span class="regexp">/usr/</span>share<span class="regexp">/pandoc*/</span>templates/<span class="keyword">default</span>.latex</span><br></pre></td></tr></table></figure>
 <p>对于latex不熟悉的同学，建议先做个备份比较妥当。以免该乱了回不来。<br>当然windows下的修改也应该类似，找到pandoc安装文件夹里去找模板文件，或者直接搜索也可以。</p>
 
 			  
@@ -155,7 +158,26 @@
 	  
 
 		
+<section id="comment">
   
+   <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="_posts/20151214.md" data-title="Pandoc经验" data-url="http://yoursite.com/2015/12/14/20151214/"></div>
+    <!-- 多说评论框 end -->
+   <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'hxxia'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  
+</section>
 
 
 	</div>
@@ -188,11 +210,11 @@
 		<ul class="tag_box inline list-unstyled">
 		
 			<li>
-            <a href="/categories/Others/">Others <span class="badge">1</span></a>
+            <a href="/categories/Others/">杂记 <span class="badge">1</span></a>
             </li>
 		
 			<li>
-            <a href="/categories/Research/">Research <span class="badge">1</span></a>
+            <a href="/categories/研究/">研究 <span class="badge">1</span></a>
             </li>
 		
 		</ul>
@@ -222,9 +244,6 @@
 			<footer>
 				
 
-<p>
-  由 <a href="https://hexo.io">hexo</a> 强力驱动 | 搭载 <a href="https://github.com/wayou/hexo-theme-material">material</a> 主题
-</p>
 <p>
   &copy; 2015 <a href="http://yoursite.com"> Hongxing </a>
 </p>
