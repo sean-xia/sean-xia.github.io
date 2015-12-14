@@ -7,10 +7,7 @@
   <meta name="author" content="Hongxing">
   
   <meta name="description" content="pandoc被不少人誉为神器，确实，在文档转换方面它确实很不错，支持简介的markdown标记语法。这里仅就本人使用较多的转换为html格式和pdf格式文档做简单记录。
-
-转换为html格式。命令为1pandoc --ascii yourfile.txt -o newfile.html
-
-
+1.转换为html格式。命令为:1pandoc --ascii yourfile.txt -o newfile.html
 这里–a">
   
   
@@ -134,15 +131,9 @@
 			<!-- index -->
 		  
 					<p>pandoc被不少人誉为神器，确实，在文档转换方面它确实很不错，支持简介的markdown标记语法。这里仅就本人使用较多的转换为html格式和pdf格式文档做简单记录。</p>
-<ol>
-<li>转换为html格式。命令为<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">pandoc</span> <span class="tag">--ascii</span> <span class="tag">yourfile</span><span class="class">.txt</span> <span class="tag">-o</span> <span class="tag">newfile</span><span class="class">.html</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="1-_u8F6C_u6362_u4E3Ahtml_u683C_u5F0F_u3002_u547D_u4EE4_u4E3A_3A"><a href="#1-_u8F6C_u6362_u4E3Ahtml_u683C_u5F0F_u3002_u547D_u4EE4_u4E3A_3A" class="headerlink" title="1.转换为html格式。命令为:"></a>1.转换为html格式。命令为:</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">pandoc</span> <span class="tag">--ascii</span> <span class="tag">yourfile</span><span class="class">.txt</span> <span class="tag">-o</span> <span class="tag">newfile</span><span class="class">.html</span></span><br></pre></td></tr></table></figure>
 <p>这里–ascii可以避免转成utf-8编码，这样中文在浏览器上就不会乱码了。</p>
-<ol>
-<li>转为pdf格式。命令为<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc --latex-engine=xelatex yourfile<span class="class">.txt</span> -o newfile.pdf</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="2-_u8F6C_u4E3Apdf_u683C_u5F0F_u3002_u547D_u4EE4_u4E3A"><a href="#2-_u8F6C_u4E3Apdf_u683C_u5F0F_u3002_u547D_u4EE4_u4E3A" class="headerlink" title="2.转为pdf格式。命令为"></a>2.转为pdf格式。命令为</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc --latex-engine=xelatex yourfile<span class="class">.txt</span> -o newfile.pdf</span><br></pre></td></tr></table></figure>
 <p>注意，为了正确转换中文文本，请修改模板文件，在模板文件第一行下方加入</p>
 <figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;ctex&#125;</span></span><br></pre></td></tr></table></figure>
 <p>即可，当然你首先得确认你的系统上可以正确编译和生成中文tex文件。另外，模板文件在哪里呢？这个需要说明一下，你可以使用如下命令查看：</p>
