@@ -3,13 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015/12 | SlightBlack&#39;s Blog</title>
+  <title>Pandoc经验 | SlightBlack&#39;s Blog</title>
   <meta name="author" content="Hongxing">
+  
+  <meta name="description" content="pandoc被不少人誉为神器，确实，在文档转换方面它确实很不错，支持简介的markdown标记语法。这里仅就本人使用较多的转换为html格式和pdf格式文档做简单记录。
+
+转换为html格式。命令为1pandoc --ascii yourfile.txt -o newfile.html
+
+
+这里–a">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Pandoc经验"/>
   <meta property="og:site_name" content="SlightBlack&#39;s Blog"/>
 
   
@@ -114,23 +121,33 @@
 	<div class="col-md-8">
 	  <!-- index -->
 	  
-			<h1>归档</h1>
-	  <!-- post -->
+			<h1>Pandoc经验</h1>
+			
+			<div>
+				<i class="fa fa-clock-o"></i>
+				<span class="post-time">2015-12-14 12:00:24</span>
+			</div>
+			
 	  
 
 		<div class="content">
 			<!-- index -->
 		  
-		  		
-              <p class="archive-item">
-								<a href="/2015/12/14/20151214/" class="archive-title">Pandoc经验</a><span class="archive post-time">2015-12-14</span>
-							</p>
-			  	
-              <p class="archive-item">
-								<a href="/2015/12/13/Csthlm/" class="archive-title">中文版斯德哥尔摩Beamer模板</a><span class="archive post-time">2015-12-13</span>
-							</p>
-			  	
-			  <!-- post -->
+					<p>pandoc被不少人誉为神器，确实，在文档转换方面它确实很不错，支持简介的markdown标记语法。这里仅就本人使用较多的转换为html格式和pdf格式文档做简单记录。</p>
+<ol>
+<li>转换为html格式。命令为<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">pandoc</span> <span class="tag">--ascii</span> <span class="tag">yourfile</span><span class="class">.txt</span> <span class="tag">-o</span> <span class="tag">newfile</span><span class="class">.html</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这里–ascii可以避免转成utf-8编码，这样中文在浏览器上就不会乱码了。</p>
+<ol>
+<li>转为pdf格式。命令为<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc --latex-engine=xelatex yourfile<span class="class">.txt</span> -o newfile.pdf</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>注意，为了正确转换中文文本，请修改模板文件，在模板文件第一行下方加入<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\usepackage&#123;ctex&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>即可，当然你首先得确认你的系统上可以正确编译和生成中文tex文件。另外，模板文件在哪里呢？这个需要说明一下，你可以使用如下命令查看：<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -<span class="keyword">D</span> latex</span><br></pre></td></tr></table></figure></p>
+<p>如果是其他模版，比如html等，将latex变成html即可。如果要修改的话，以我使用的mint操作系统为例，应该使用的命令是：<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\sudo vim <span class="regexp">/usr/</span>share<span class="regexp">/pandoc*/</span>templates/<span class="keyword">default</span>.latex</span><br></pre></td></tr></table></figure></p>
+<p>对于latex不熟悉的同学，建议先做个备份比较妥当。以免该乱了回不来。<br>当然windows下的修改也应该类似，找到pandoc安装文件夹里去找模板文件，或者直接搜索也可以。</p>
+
 			  
 		</div>
 
@@ -138,6 +155,8 @@
 	  
 
 		
+  
+
 
 	</div>
 	<div class="col-md-4">
