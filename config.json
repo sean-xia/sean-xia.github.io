@@ -1,6 +1,9 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
+    "title":"Summer",
+    "subTitle":"Blog all",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
-    "GMEEK_VERSION":"last"
+    "GMEEK_VERSION":"last",
+    "displayTitle":"Summer",
+    "homeUrl":"http://sean-xia.github.io",
+    "email":"xiahongxing@gmail.com"
 }
