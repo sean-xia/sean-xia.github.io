@@ -1,6 +1,6 @@
 ## Winget简介
 
-Windows下安装软件通常并不友好，要么按照一个**管家之类的全家桶，要么到各软件的官方网站去下载，确实很麻烦。但是Windows 10 (1809+) 之后可以使用Winget了。具体安装参考https://github.com/microsoft/winget-cli/releases。win11 以及内置了，不需要单独安装。
+Windows下安装软件通常并不友好，要么按照一个**管家之类的全家桶，要么到各软件的官方网站去下载，确实很麻烦。但是Windows 10 (1809+) 之后可以使用Winget了。具体安装参考https://github.com/microsoft/winget-cli/releases。win11 已经内置winget了，不需要单独安装。
 
 ## 使用方法
 
