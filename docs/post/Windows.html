@@ -10,13 +10,17 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="这是第一个篇文章。">
-<meta property="og:title" content="第一个页面">
-<meta property="og:description" content="这是第一个篇文章。">
+<meta name="description" content="## Winget简介
+
+Windows下安装软件通常并不友好，要么按照一个**管家之类的全家桶，要么到各软件的官方网站去下载，确实很麻烦。">
+<meta property="og:title" content="Windows">
+<meta property="og:description" content="## Winget简介
+
+Windows下安装软件通常并不友好，要么按照一个**管家之类的全家桶，要么到各软件的官方网站去下载，确实很麻烦。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://sean-xia.github.io/post/di-yi-ge-ye-mian.html">
+<meta property="og:url" content="http://sean-xia.github.io/post/Windows.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
-<title>第一个页面</title>
+<title>Windows</title>
 
 
 
@@ -42,13 +46,13 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     .postTitle{font-size:24px;}
 }
 </style>
-
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style>
 
 
 
 <body>
     <div id="header">
-<h1 class="postTitle">第一个页面</h1>
+<h1 class="postTitle">Windows</h1>
 <div class="title-right">
     <a href="http://sean-xia.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -56,7 +60,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/sean-xia/sean-xia.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/sean-xia/sean-xia.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -72,8 +76,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>这是第一个篇文章。</p>
-<p>时间是2024年7月25日</p></div>
+<div class="markdown-body" id="postBody"><h2>Winget简介</h2>
+<p>Windows下安装软件通常并不友好，要么按照一个**管家之类的全家桶，要么到各软件的官方网站去下载，确实很麻烦。但是Windows 10 (1809+) 之后可以使用Winget了。具体安装参考<a href="https://github.com/microsoft/winget-cli/releases%E3%80%82win11">https://github.com/microsoft/winget-cli/releases。win11</a> 以及内置了，不需要单独安装。</p>
+<h2>使用方法</h2>
+<p>在cmd或者power shell 中运行 <code class="notranslate">winget install [softwarename]</code> 即可。</p>
+<p>例如，安装QQ和微信，<br>
+<code class="notranslate">winget install tencent.qq</code></p>
+<p>`winget install tencent.wechat'</p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>如果不知道软件的全称，也没关系，可以使用 <code class="notranslate">winget search [keyword]</code> 来搜索，然后选择安装。<br>
+比如，不知道搜狗输入法如何安装，可以搜索<br>
+<code class="notranslate">winget search sogou</code><br>
+找到相应的名称进行安装。</p>
+</div>
+<h2>小结</h2>
+<p>我尝试了工作中要用到的所有软件，基本上可以找到安装包，安装速度也很快。值得向所有windows用户推荐。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
