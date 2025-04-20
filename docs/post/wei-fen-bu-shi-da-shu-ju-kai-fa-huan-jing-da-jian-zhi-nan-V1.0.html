@@ -130,6 +130,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 mkdir -p /opt/module
 mkdir -p /opt/software
 
+<span class="pl-c"><span class="pl-c">#</span> 使用winscp工具将所需软件拷贝到/opt/software目录下，如果是Linux系统请使用scp命令</span>
 
 <span class="pl-c"><span class="pl-c">#</span> 创建数据目录</span>
 mkdir -p /data
@@ -142,7 +143,8 @@ mkdir -p /data
 
 <span class="pl-c"><span class="pl-c">#</span> 设置主机名和hosts</span>
 <span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>master<span class="pl-pds">"</span></span> <span class="pl-k">&gt;</span> /etc/hostname
-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>127.0.0.1 master<span class="pl-pds">"</span></span> <span class="pl-k">&gt;&gt;</span> /etc/hosts
+<span class="pl-c"><span class="pl-c">#</span>假设本机地址为192.168.55.123</span>
+<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>192.168.55.123 master<span class="pl-pds">"</span></span> <span class="pl-k">&gt;&gt;</span> /etc/hosts
 
 
 <span class="pl-c"><span class="pl-c">#</span> 刷新环境变量</span>
